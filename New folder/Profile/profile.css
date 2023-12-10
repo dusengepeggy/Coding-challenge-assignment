@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../main/peggy-gou-kirin-launch-1-1280x853.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    align-items: center;
+    
+   
+    
+}
+main{
+    width: 100%;
+    position: absolute;
+}
+.nav1{
+    position: fixed;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5) ;
+}
+.nav1 li:first-child{
+     margin-right: auto;
+
+}
+.menuicon{
+    display: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(239, 231, 231);
+}
+.nav2{
+    display: none;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width:40%;
+    height: 100%; 
+    flex-direction:column;
+    justify-content: flex-start;
+    gap: 10%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5) ;
+    z-index: 999;
+}
+.butto{
+    width: 100%;
+    height: 100%;
+   
+}
+button{
+    
+    display: block;
+    margin:20% auto;
+    width: 50%;
+    padding: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(239, 231, 231); 
+    color: black;
+    border-radius: 20px;
+   
+    
+   
+    
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.453);
+    border: 0;
+    color: aliceblue;
+}
+.prof{
+    width: 50%;
+    margin: auto 25%;
+    top:20%;
+    position: relative;
+    z-index: 999;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius:20px ;
+}
+
+.prof img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+@media (max-width:800px){
+    .tohide{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+    }
+    .toshow .nav2{
+        display: flex;
+       
+    }
+
+}
+

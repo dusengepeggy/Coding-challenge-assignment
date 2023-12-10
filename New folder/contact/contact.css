@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../main/peggy-gou-kirin-launch-1-1280x853.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.nav1{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5) ;
+}
+.nav1 li:first-child{
+     margin-right: auto;
+
+}
+.menuicon{
+    display: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(239, 231, 231);
+}
+.nav2{
+    display: none;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width:40%;
+    height: 100%; 
+    flex-direction:column;
+    justify-content: flex-start;
+    gap: 10%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5) ;
+    z-index: 999;
+}
+h1{
+  font-size: 500%;  
+  width: 100%;
+  text-align: center;
+}
+form{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent ;
+    margin: auto ;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    padding: 10px;
+}
+
+input{
+    width: 96%;
+    padding:5px 10px;
+    border: none;
+    border-bottom: 2px solid rgb(239, 231, 231);
+    outline: none;
+    color: black;
+    border-radius: 15px;
+    
+}
+input[type="submit"]:hover{
+    background-color: rgba(0, 0, 0, 0.453);
+    border: 0;
+    color: aliceblue;
+}
+
+
+textarea{
+    color: black;
+    width: 96%;
+    padding:5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(239, 231, 231);
+    outline: none;
+}
+
+.contacts{
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly ;
+    
+    
+}
+ .n h3{
+    color: aliceblue;
+    font-size: 20px;
+    padding-bottom: 5px;
+    
+
+}
+
+.n{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue ;
+    font-size: 15px;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-top:100px;
+    padding: 10px;
+   
+}
+
+
+@media (max-width:800px){
+    .tohide{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+    }
+    .toshow .nav2{
+        display: flex;
+       
+    }
+    form{
+        width: 100%;
+        
+    }
+    h1{
+        font-size: 200%;
+    }
+
+}

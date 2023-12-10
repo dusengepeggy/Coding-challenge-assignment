@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <nav class="start">
+        <ul class="nav1">
+            <li>PEGGY</li>
+            <li class="menuicon" onclick=showbar()><ion-icon name="reorder-four-outline"></ion-icon></li>
+            <li class="tohide"><a href='./index.html'>Home</a></li>
+            <li class="tohide"><a href='../Profile/profile.html'>Profile</a></li>
+            <li class="tohide"><a href='../contact/contact.html'>Contact Us</a></li>
+            <li class="tohide"><a href='../login/login.html'>Login</a></li>
+            <li class="tohide"><a href="../register/register.html">Register</a></li>
+        </ul>
+    </nav>
+    <nav class="toshow">
+        <ul class="nav2">
+            <li onclick=hidebar()><ion-icon  name="close-outline"></ion-icon></li>
+            <li ><a href='./index.html'>Home</a></li>
+            <li ><a href='../Profile/profile.html'>Profile</a></li>
+            <li><a href='../contact/contact.html'>Contact us</a></li>
+            <li ><a href='../login/login.html'>Login</a></li>
+            <li><a href="../register/register.html">Register</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>THIS IS A ILLUSTRATION PLATFORM FOR THE GIVEN ASSINGMENT IT INCLUDES THE FOLLOWING </p>
+        <div class="dropdown">
+            <button class="dropbtn">what this covers ▼</button>
+            <div class="dropdown-content">
+              <a href="#">Responsive navbar</a>
+              <a href="#">pop up button</a>
+              <a href="#">Dropdown menu</a>
+              <a href="">personal profile card</a>
+              <a href="">contact page</a>
+              <a href="">Login page</a>
+              <a href="">side bar</a>
+            </div>
+          </div>
+        
+
+           
+        
+
+    </main>
+    
+</body>
+</html>
+<script>
+    
+    function hidebar(){
+        var bar=document.querySelector('.toshow');
+        bar.style.display="none";
+    }
+    function showbar() {
+        var bar=document.querySelector('.toshow');
+        bar.style.display='flex';
+    }
+</script>

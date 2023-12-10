@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./profile.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <nav class="start">
+            <ul class="nav1">
+                <li>PEGGY</li>
+                <li class="menuicon" onclick=showbar()><ion-icon name="reorder-four-outline"></ion-icon></li>
+                <li class="tohide"><a href='../main/index.html'>Home</a></li>
+                <li class="tohide"><a href='../Profile/profile.html'>Profile</a></li>
+                <li class="tohide"><a href='../contact/contact.html'>Contact Us</a></li>
+                <li class="tohide"><a href='../login/login.html'>Login</a></li>
+                <li class="tohide"><a href="../register/register.html">Register</a></li>
+            </ul>
+        </nav>
+        <nav class="toshow">
+            <ul class="nav2">
+                <li onclick=hidebar()><ion-icon  name="close-outline"></ion-icon></li>
+                <li ><a href='../main/index.html'>Home</a></li>
+                <li ><a href='../Profile/profile.html'>Profile</a></li>
+                <li><a href='../contact/contact.html'>Contact us</a></li>
+                <li ><a href='../login/login.html'>Login</a></li>
+                <li><a href="../register/register.html">Register</a></li>
+            </ul>
+        </nav>
+        <div class="butto" >
+        <button onclick=showp() >CLICK HERE TO VIEW PROFILE</button>
+        </div>
+    </main> 
+     
+    </script>
+    <div class="prof">
+        <li onclick=hidep()><ion-icon  name="close-outline"></ion-icon></li>
+        <img src="../main/peggy-gou-kirin-launch-1-1280x853.jpg" alt="">
+        <h3>PEGGY GOU</h3>
+        <p>Backend developer</p>
+        <p>Lorem ipsum dolor sit amet consectetur  Ab nulla optio maiores?</p>
+
+
+    </div>
+</body>
+</html>
+<script>
+    function showp() {
+        var p=document.querySelector('.prof');
+        var a=document.getElementsByClassName('.butto')
+        p.style.display="flex";
+        
+    }
+    function hidep(){
+        var p=document.querySelector('.prof');
+        p.style.display="none";
+    }
+    
+    function hidebar(){
+        var bar=document.querySelector('.toshow');
+        bar.style.display="none";
+    }
+    function showbar() {
+        var bar=document.querySelector('.toshow');
+        bar.style.display='flex';
+    }
+</script>

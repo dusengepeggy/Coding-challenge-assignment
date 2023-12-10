@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./contact.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <nav class="start">
+        <ul class="nav1">
+            <li>PEGGY</li>
+            <li class="menuicon" onclick=showbar()><ion-icon name="reorder-four-outline"></ion-icon></li>
+            <li class="tohide"><a href='../main/index.html'>Home</a></li>
+            <li class="tohide"><a href='../Profile/profile.html'>Profile</a></li>
+            <li class="tohide"><a href='./contact.html'>Contact us</a></li>
+            <li class="tohide"><a href='../login/login.html'>Login</a></li>
+            <li class="tohide"><a href="../register/register.html">Register</a></li>
+        </ul>
+    </nav>
+    <nav class="toshow">
+        <ul class="nav2">
+            <li onclick=hidebar()><ion-icon  name="close-outline"></ion-icon></li>
+            <li ><a href='../main/index.html'>Home</a></li>
+            <li ><a href='../Profile/profile.html'>Profile</a></li>
+            <li><a href='./contact.html'>Contact us</a></li>
+            <li ><a href='../login/login.html'>Login</a></li>
+            <li><a href="../register/register.html">Register</a></li>
+        </ul>
+    </nav>
+    <script>
+    
+        function hidebar(){
+            var bar=document.querySelector('.toshow');
+            bar.style.display="none";
+        }
+        function showbar() {
+            var bar=document.querySelector('.toshow');
+            bar.style.display='flex';
+        }
+    </script>
+    <section>
+        <h1>TALK TO US  </h1>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="message">Leave  a message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <footer class="contacts">
+        
+        <div class="location n">
+            <h3>Location</h3>
+            <p>Kigali RWANDA</p>
+            <p>M BUILDING</p>
+            <a target="_blank" href="https://www.google.com/maps/place/KK+174+St,+Kigali/@-1.9743838,30.1429859,17z/data=!3m1!4b1!4m6!3m5!1s0x19dca79320349907:0xa8c520c6ba8d7bef!8m2!3d-1.9743838!4d30.1455608!16s%2Fg%2F12xqxmcms?entry=ttu">KK 174 st</a>
+        </div>
+        <div class="telnbr n">
+            <h3>Call me</h3>
+            <p>+250 78 88 88 88</p>
+            <p>+250 73 88 88 88</p>
+            <p>+250 72 88 88 88</p>
+        </div>
+        <div class="n">
+            <h3>Follow</h3>
+            <div class="sp n">
+            
+            <a href="https://www.instagram.com/kigali.rwanda/"><ion-icon name="logo-instagram"></ion-icon> Instagram</i></a>
+            <a href="https://twitter.com/kigali_rwanda"><ion-icon name="logo-github"></ion-icon> Git hub</i></a>
+            <a href="https://twitter.com/kigali_rwanda"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
+<script>
+    
+    function hidebar(){
+        var bar=document.querySelector('.toshow');
+        bar.style.display="none";
+    }
+    function showbar() {
+        var bar=document.querySelector('.toshow');
+        bar.style.display='flex';
+    }
+</script>
