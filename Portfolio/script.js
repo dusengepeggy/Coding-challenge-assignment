@@ -55,8 +55,8 @@ let display=()=>{
     <h3>${customersFB[i].name}</h3>
     <p>${customersFB[i].email}</p>
     `;
-    window.onload=displayt;
+    
 };
 
-
+window.onload=display;
 
